@@ -17,3 +17,44 @@
   + 트랜잭션이 발생하는 SQL도 이 DML에 속함<br>
     + 테이블에 데이터를 변경(R/U/D)할 때 실제 테이블에 완전히 적용하지 않고, 임시로 적용<br>
     + 취소가능<br>
+    <br>
++ DDL<br>
+  + 데이터 정의 언어<br>
+  + 데이터베이스, 테이블, 뷰 인덱스 등의 데이터베이스 객체를 생성, 삭제, 변경하는 역할<br>
+  + CREATE, DROP, ALTER 구문<br>
+  + DDL은 트랜잭션 발생시키지 않음<br>
+  + ROLLBACK 이나 COMMIT 사용 불가<br>
+  + DDL문은 실행 즉시 MySQL에 적용<br>
+  <br>
++ DCL<br>
+  + 데이터 제어 언어<br>
+  + 사용자에게 어떤 권한을 부여하거나 빼앗을때 주로 사용하는 구문<br>
+  + GRANT/REVOKE/<br>
+  <br>
+  
+  + USE<br>
+    사용할 테이터 베이스 지정<br>
+  + SHOW TABLE<br>
+    데이터 베이스에  ??의 테이블 이름 보기<br>
+  + SHOW TABLE STATUS<br>
+    데이버베이스의 정보 조회<br>
+  + DESCRIBE(DESC)<br>
+    해당 테이블에 무슨 열이 있는지 확인<br>
+    <br>
+    
+  + SELECT<br>
+    + <SELECT... FROM><br>
+    + 요구하는 데이터를 가져오는 구문<br>
+    + 데이터베이스 내 테이블에서 원하는 정보를 추출<br>
+    + SELECT의 구문 형식
+      select_expr
+      [FROM table_references]
+      [WHERE where_condition]
+      [GROUP BY {col_name | expr | position}]
+      [HAVING where_condition]
+      [ORDER BY {col_name | expr | position}]
+    
+    
+    
+    
+  
