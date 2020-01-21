@@ -46,13 +46,26 @@
     + <SELECT... FROM><br>
     + 요구하는 데이터를 가져오는 구문<br>
     + 데이터베이스 내 테이블에서 원하는 정보를 추출<br>
-    + SELECT의 구문 형식
-      select_expr
-      [FROM table_references]
-      [WHERE where_condition]
-      [GROUP BY {col_name | expr | position}]
-      [HAVING where_condition]
-      [ORDER BY {col_name | expr | position}]
+    + SELECT의 구문 형식<br>
+      select_expr<br>
+      [FROM table_references]<br>
+      [WHERE where_condition]<br>
+      [GROUP BY {col_name | expr | position}]<br>
+      [HAVING where_condition]<br>
+      [ORDER BY {col_name | expr | position}]<br><br>
+        + SELECT 열이름<br>
+          + 테이블에서 필요로 하는 열만 가져오기 가능<br>
+          + 여러 개의 열을 가져오고 싶을 때는 콤마로 구분<br>
+          + 열이름의 순서는 출력하고 싶은 순서대로 배열가능<br>
++ 기본적인 WHERE절<br>
+  + 조회하는 결과에 특정한 조건으로 원하는 데이터만 보고 싶을 때 사용<br>
+  + SELECT 필드 이름 FROM 테이블 이름 WHERE 조건 식<br>
+  + 조건이 없을 경우 테이블의 크기가 클수록 찾는 시간과 노력이 증가<br>
+    ex> SELECT * FROM city WHERE pop >= 8000000; << 인구 800만 이상의 도시만 보여달라는 뜻 <br>
+    
++ 관계 연산자의 사용<br>
+  + OR , AND , 조건 (=, >, < ...), 관계(NOT , AND , OR 등) 연산자의 조합 가능<br>
+  
     
     
     
